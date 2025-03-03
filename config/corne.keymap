@@ -51,7 +51,7 @@
    &kp ESC  HRML(A, S, D, F) &kp G   &kp H HRMR(J, K, L, SEMI) &kp SQT
 // -----------------------------------------------------------------------------------------
 // | LBKT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-   &to LOWER &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &to RAISE
+   &tog LOWER &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &tog RAISE
 // -----------------------------------------------------------------------------------------
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                   &to DEFAULT &kp BSPC &kp DELETE  &kp RET &kp SPACE &to DEFAULT
@@ -66,7 +66,7 @@
         	bindings = <
    	&trans &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
 	&trans  &trans  &trans   &trans   &trans  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   	&to DEFAULT  &trans       &trans   &trans    &trans      &trans         &trans   &trans   &trans &trans    &trans &trans
+   	&to DEFAULT  &trans       &trans   &trans    &trans      &trans         &trans   &trans   &trans &trans    &trans &tog RAISE
                                     &trans     &trans       &trans      &trans  &trans   &trans
             >;
         };
@@ -80,7 +80,7 @@
         	bindings = <
    &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
    &trans &trans   &trans &trans   &trans   &kp TILDE   &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &trans &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &to DEFAULT 
+   &tog LOWER &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &to DEFAULT 
                              &trans &trans   &trans  &trans   &trans    &trans
         	>;
 		};
