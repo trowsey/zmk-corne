@@ -29,7 +29,7 @@
 			require-prior-idle-ms = <120>;
 			bindings = <&kp>, <&kp>;
 		};
-
+	
 		htl: hold_tap_layer {
 //			label = "hold_tap_layer";
 			compatible = "zmk,behavior-hold-tap";
@@ -76,8 +76,8 @@
 			//                    | GUI |     | SPC |   | ENT |     | ALT |
 			bindings = <
 				&trans &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
-				&trans  &trans  &trans   &trans   &trans  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-				&htl LOWER DEFAULT  &trans       &trans   &trans    &trans      &trans         &trans   &trans   &trans &kp PAGE_UP &kp PAGE_DOWN &htl RAISE RAISE
+				&trans  &trans  &trans   &trans   &trans  &kp CAPS &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+				&htl LOWER DEFAULT  &trans       &trans   &trans    &trans      &trans         &trans   &trans   &kp PAGE_UP &kp PAGE_DOWN &trans &htl RAISE RAISE
 				&trans     &trans       &trans      &trans  &trans   &trans
 			>;
 		};
